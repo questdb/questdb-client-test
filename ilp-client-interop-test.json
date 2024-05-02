@@ -1634,5 +1634,20 @@
         "result": {
             "status": "ERROR"
         }
+    },
+    {
+        "testName": "quote in symbol value",
+        "table": "quote",
+        "symbols": [
+          {
+            "name": "sym",
+            "value": "\"val\""
+          }
+        ],
+        "columns": [],
+        "result": {
+          "status": "SUCCESS",
+          "line": "quote,sym=\"val\""
+        }
     }
 ]
